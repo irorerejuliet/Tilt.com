@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
+import React, { useState } from 'react'
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <>
       <div className="">
@@ -73,8 +75,7 @@ const Navbar = () => {
       </div>
       {/* Mobile navBar*/}
       <div className="md:hidden block sticky top-0 z-50 bg-black text-white">
-        <div className="">
-          {/* <GiHamburgerMenu /> */}
+        <div className=" flex justify-between items-center px-4">
           <Link href={"/"}>
             <Image
               src="/images/logo.svg"
@@ -84,6 +85,9 @@ const Navbar = () => {
               height={10}
             />
           </Link>
+          <button onClick={() => {setIsOpen(isOpen)}}>
+            <GiHamburgerMenu />
+          </button>
         </div>
       </div>
     </>
