@@ -12,12 +12,18 @@ const Herosection = () => {
             <Image
               src="/images/image-1.jpeg"
               alt="picture"
-               className="w-full h-full object-cover"
-              width={100}
-              height={100}
+              className="w-full h-full object-cover"
+              width={500}
+              height={500}
             />
-            <div className="flex items-center py-1 px-3 rounded-full bg-white text-black w-24 absolute bottom-4 left-7">
-              <Image src="/images/pot.svg" alt="" className="" width={4} height={4}/>
+            <div className="flex items-center p-1 rounded-full bg-white text-black w-24 absolute bottom-4 left-7">
+              <Image
+                src="/images/pot.svg"
+                alt=""
+                className="bg-[#E4E24E] p-2 rounded-full"
+                width={30}
+                height={30}
+              />
               <button className="text-base font-medium">+$200</button>
             </div>
           </div>
@@ -33,8 +39,8 @@ const Herosection = () => {
               src="/images/image-2.webp"
               alt=""
               className="w-full h-full object-cover"
-              width={100}
-              height={100}
+              width={500}
+              height={500}
             />
             <button className="py-1 px-3 rounded-full bg-red-700">+$200</button>
           </div>
@@ -47,12 +53,12 @@ const Herosection = () => {
                 src="/images/image-3.webp"
                 alt="picture"
                 className="w-full h-full object-cover"
-                width={100}
-                height={100}
+                width={500}
+                height={500}
               />
             </div>
             <div className="py-16 mx-auto text-center">
-              <button className="py-4 px-8  rounded-full text-black bg-primary text-lg font-semibold">
+              <button className="py-4 px-8  rounded-full text-black bg-[#E4E24E] text-lg font-semibold">
                 GET STARTED
               </button>
               <div className="flex items-center gap-1 pt-4">
@@ -61,7 +67,7 @@ const Herosection = () => {
                 </p>
                 <Link
                   href={"/"}
-                  className="text-base font-normal text-primary border-b"
+                  className="text-base font-normal text-[#E4E24E] underline"
                 >
                   Login
                 </Link>
@@ -72,8 +78,8 @@ const Herosection = () => {
                 src="/images/image-4.webp"
                 alt="picture"
                 className="w-full h-full object-cover"
-                width={100}
-                height={100}
+                width={500}
+                height={500}
               />
             </div>
           </div>
@@ -83,8 +89,8 @@ const Herosection = () => {
                 src="/images/image-5.webp"
                 alt="picture"
                 className="w-full h-full object-cover"
-                width={100}
-                height={100}
+                width={500}
+                height={500}
               />
             </div>
             <div className="w-90 h-110  border-2 border-white ml-16">
@@ -92,8 +98,8 @@ const Herosection = () => {
                 src="/images/CashForGas.webp"
                 alt=""
                 className="w-full full border-white border-2"
-                width={100}
-                height={100}
+                width={500}
+                height={500}
               />
             </div>
             <div className="w-56 h-72 overflow-hidden mb-72  border-2 border-white mt-20  ">
@@ -101,8 +107,8 @@ const Herosection = () => {
                 src="/images/image-6.webp"
                 alt="picture"
                 className="w-full h-full object-cover"
-                width={100}
-                height={100}
+                width={500}
+                height={500}
               />
             </div>
           </div>
