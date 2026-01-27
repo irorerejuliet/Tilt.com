@@ -16,7 +16,7 @@ const Herosection = () => {
               width={500}
               height={500}
             />
-            <div className="flex items-center p-1 rounded-full bg-white text-black w-24 absolute bottom-4 left-7">
+            <div className="flex items-center p-1 rounded-full bg-white text-black w-24 absolute bottom-2 left-10">
               <Image
                 src="/images/pot.svg"
                 alt=""
@@ -30,11 +30,11 @@ const Herosection = () => {
 
           {/* TEXT */}
           <h1 className="text-white max-w-3xl text-8xl font-bold text-center font-abcgravity">
-            Cash and credit powered by your potential
+            Cash and credit powered by your potential™
           </h1>
 
           {/* RIGHT IMAGE */}
-          <div className="w-40 h-52  border-2 border-white ">
+          <div className="w-40 h-52  border-2 border-white">
             <Image
               src="/images/image-2.webp"
               alt=""
@@ -42,7 +42,16 @@ const Herosection = () => {
               width={500}
               height={500}
             />
-            <button className="py-1 px-3 rounded-full bg-red-700">+$200</button>
+            <div className="flex items-center p-1 rounded-full bg-white text-black w-24 absolute bottom-120 left-386">
+              <Image
+                src="/images/network.svg"
+                alt=""
+                className="bg-[#E4E24E] p-2 rounded-full"
+                width={30}
+                height={30}
+              />
+              <button className="text-base font-medium">+$200</button>
+            </div>
           </div>
         </div>
 
@@ -56,6 +65,16 @@ const Herosection = () => {
                 width={500}
                 height={500}
               />
+              <div className="flex items-center p-1 rounded-full bg-white text-black w-24 absolute bottom-20 left-115">
+                <Image
+                  src="/images/tv.svg"
+                  alt="tv"
+                  className="bg-[#E4E24E] p-2 rounded-full"
+                  width={30}
+                  height={30}
+                />
+                <button className="text-base font-medium">+$200</button>
+              </div>
             </div>
             <div className="py-16 mx-auto text-center">
               <button className="py-4 px-8  rounded-full text-black bg-[#E4E24E] text-lg font-semibold">
