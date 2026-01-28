@@ -8,14 +8,76 @@ import Slider from "react-slick";
 
 
 const MobileHerosection = () => {
+
+  const sliderItems = [
+    {
+      image: "/images/image-1.jpeg",
+      text: "High limit",
+      subText: "Cash for a surprise bill",
+      icon: "/images/pot.svg",
+      iconBg: "bg-[#E4E24E]",
+      left: "left-20",
+    },
+    {
+      image: "/images/image-2.webp",
+      text: "High limit",
+      subText: "to chase your goals",
+      icon: "/images/network.svg",
+      iconBg: "bg-[#E4E24E]",
+      left: "left-20",
+    },
+    {
+      image: "/images/image-3.webp",
+      text: "Credit history",
+      subText: "to buy a home",
+      icon: "/images/tv.svg",
+      iconBg: "bg-[#E4E24E]",
+      left: "left-16",
+    },
+    {
+      image: "/images/image-4.webp",
+      text: "High limit",
+      subText: "to help the family",
+      icon: "/images/pot.svg",
+      iconBg: "bg-[#E4E24E]",
+      left: "left-16",
+    },
+    {
+      image: "/images/image-5.webp",
+      text: "Cash",
+      subText: "to bridge the gap",
+      icon: "/images/tv.svg",
+      iconBg: "bg-[#E4E24E]",
+      left: "left-16",
+    },
+    {
+      image: "/images/CashForGas.webp",
+      text: "Cash",
+      subText: "for cash and groceries",
+      icon: "/images/pot.svg",
+      iconBg: "bg-[#E4E24E]",
+      left: "left-20",
+    },
+    {
+      image: "/images/image-6.webp",
+      text: "Higher limits",
+      subText: "to help the family",
+      icon: "/images/tv.svg",
+      iconBg: "bg-[#E4E24E]",
+      left: "left-20",
+    },
+  ];
+
+
+
   const settings = {
     dots: false,
+    arrows: false,
     infinite: true,
-    
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    speed: 8000,
     cssEase: "linear",
   };
   return (
@@ -40,150 +102,39 @@ const MobileHerosection = () => {
         </div>
       </div>
       {/* Mobile Herosection with carousel */}
-      <div className="slider-container gap-6 items-center md:px-0 px-8">
-        <Slider {...settings}>
-          <div className="w-60 h-72  border-2 border-white relative">
-            <Image
-              src="/images/image-1.jpeg"
-              alt="picture"
-              className=" object-cover"
-              width={500}
-              height={500}
-            />
-            <div className="flex items-center p-1 rounded-full bg-white text-black w-24 absolute bottom-2 left-20">
-              <Image
-                src="/images/pot.svg"
-                alt=""
-                className="bg p-2 rounded-full"
-                width={30}
-                height={30}
-              />
-              <button className="text-base font-medium">+$200</button>
+
+      <div className="slider-container px-15 pb-10">
+        <Slider {...settings} className="flex gap-6">
+          {sliderItems.map((item, index) => (
+            <div className="mx-1" key={index}>
+              <div className="w-60 h-72 min-w-60 min-h-72 border-2 border-white relative ">
+                <Image
+                  src={item.image}
+                  alt="picture"
+                  className="w-full h-full object-cover"
+                  width={500}
+                  height={500}
+                />
+
+                <p className="text-white text-xs font-gtamerica leading-none p-2">
+                  {item.text}<span className="italic">{item.subText}</span>
+                </p>
+
+                <div
+                  className={`flex items-center p-1 rounded-full bg-white text-black w-24 absolute bottom-2 ${item.left}`}
+                >
+                  <Image
+                    src={item.icon}
+                    alt=""
+                    className={`${item.iconBg} p-2 rounded-full`}
+                    width={30}
+                    height={30}
+                  />
+                  <button className="text-base font-medium">+$200</button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="w-60 h-72  border-2 border-white relative">
-            <Image
-              src="/images/image-2.webp"
-              alt=""
-              className="w-full h-full object-cover"
-              width={500}
-              height={500}
-            />
-            <div className="flex items-center p-1 rounded-full bg-white text-black w-24 absolute bottom-2 left-20 ">
-              <Image
-                src="/images/network.svg"
-                alt=""
-                className="bg-[#E4E24E] p-2 rounded-full"
-                width={30}
-                height={30}
-              />
-              <button className="text-base font-medium">+$200</button>
-            </div>
-          </div>
-          <div className="w-60 h-72  border-2 border-white  relative">
-            <Image
-              src="/images/image-3.webp"
-              alt="picture"
-              className="w-full h-full object-cover"
-              width={500}
-              height={500}
-            />
-            <p className="text-white">
-              Credit history <span>to buy a home</span>
-            </p>
-            <div className="flex items-center p-1 rounded-full bg-white text-black w-24 absolute bottom-2 left-16">
-              <Image
-                src="/images/tv.svg"
-                alt="tv"
-                className="bg-[#E4E24E] p-2 rounded-full"
-                width={30}
-                height={30}
-              />
-              <button className="text-base font-medium">+$200</button>
-            </div>
-          </div>
-          <div className="w-60 h-72  border-2 border-white mr-32 mt-8 relative">
-            <Image
-              src="/images/image-4.webp"
-              alt="picture"
-              className="w-full h-full object-cover"
-              width={500}
-              height={500}
-            />
-            <div className="flex items-center p-1 rounded-full bg-white text-black w-24 absolute bottom-2 left-16">
-              <Image
-                src="/images/pot.svg"
-                alt=""
-                className="bg-[#E4E24E] p-2 rounded-full"
-                width={30}
-                height={30}
-              />
-              <button className="text-base font-medium">+$200</button>
-            </div>
-          </div>
-          <div className="w-60 h-72  border-2 border-white  mt-10 relative">
-            <Image
-              src="/images/image-5.webp"
-              alt="picture"
-              className="w-full h-full object-cover"
-              width={500}
-              height={500}
-            />
-            <div className="flex items-center p-1 rounded-full bg-white text-black w-24 absolute bottom-2 left-16">
-              <Image
-                src="/images/tv.svg"
-                alt="tv"
-                className="bg-[#E4E24E] p-2 rounded-full"
-                width={30}
-                height={30}
-              />
-              <button className="text-base font-medium">+$200</button>
-            </div>
-          </div>
-          <div className="w-60 h-72  border-2 border-white relative">
-            <Image
-              src="/images/CashForGas.webp"
-              alt=""
-              className="w-full h-full border-white border-2"
-              width={500}
-              height={500}
-            />
-            <p className="text-white">
-              Cash<span>for cash and groceries</span>
-            </p>
-            <div className="flex items-center p-1 rounded-full bg-white text-black w-24 absolute bottom-2 left-20">
-              <Image
-                src="/images/pot.svg"
-                alt=""
-                className="bg-[#E4E24E] p-2 rounded-full"
-                width={30}
-                height={30}
-              />
-              <button className="text-base font-medium">+$200</button>
-            </div>
-          </div>
-          <div className="w-60 h-72  border-2 border-white mt-20  relative">
-            <Image
-              src="/images/image-6.webp"
-              alt="picture"
-              className="w-full h-full object-cover"
-              width={500}
-              height={500}
-            />
-            <p className="text-white text-base">
-              High limit <span className="">to help the family</span>
-            </p>
-            <div className="flex items-center p-1 rounded-full bg-white text-black w-24 absolute bottom-2 left-20">
-              <Image
-                src="/images/tv.svg"
-                alt="tv"
-                className="bg-[#E4E24E] p-2 rounded-full"
-                width={30}
-                height={30}
-              />
-              <button className="text-base font-medium">+$200</button>
-            </div>
-          </div>
+          ))}
         </Slider>
       </div>
     </div>
