@@ -21,7 +21,7 @@ const Herosection = () => {
               <Image
                 src="/images/pot.svg"
                 alt=""
-                className="bg p-2 rounded-full"
+                className="bg-primary p-2 rounded-full"
                 width={30}
                 height={30}
               />
@@ -65,8 +65,8 @@ const Herosection = () => {
                 width={500}
                 height={500}
               />
-              <p className="text-white">
-                Credit history <span>to buy a home</span>
+              <p className="text-white text-xs font-gtamerica pt-3 leading-none">
+                Credit history<span className="italic">to buy a home</span>
               </p>
               <div className="flex items-center p-1 rounded-full bg-white text-black w-24 absolute bottom-20 left-115">
                 <Image
@@ -143,8 +143,8 @@ const Herosection = () => {
                 width={500}
                 height={500}
               />
-              <p className="text-white">
-                Cash<span>for cash and groceries</span>{" "}
+              <p className="text-white text-xs font-gtamerica pt-3 leading-none">
+                Cash<span className="italic">for cash and groceries</span>{" "}
               </p>
               <div className="flex items-center p-1 rounded-full bg-white text-black w-24 absolute -bottom-88 left-240">
                 <Image
@@ -165,8 +165,8 @@ const Herosection = () => {
                 width={500}
                 height={500}
               />
-              <p className="text-white text-base">
-                High limit <span className="">to help the family</span>
+              <p className="text-white  text-xs font-gtamerica pt-3 leading-none">
+                High limit<span className="italic">to help the family</span>
               </p>
               <div className="flex items-center p-1 rounded-full bg-white text-black w-24 absolute -bottom-72 left-380">
                 <Image
@@ -183,7 +183,7 @@ const Herosection = () => {
         </div>
       </div>
       {/* mobile */}
-      <MobileHerosection/>
+      <MobileHerosection />
     </div>
   );
 }
