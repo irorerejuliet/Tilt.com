@@ -69,7 +69,7 @@ const MobileHerosection = () => {
   ];
 
 
-
+// Slider setting
   const settings = {
     dots: false,
     arrows: false,
@@ -86,7 +86,7 @@ const MobileHerosection = () => {
         Cash and credit powered by your potential™
       </h1>
       <div className="py-16 mx-auto text-center md:hidden block flex-row">
-        <button className="py-4 px-8  rounded-full text-black bg-[#E4E24E] text-lg font-semibold">
+        <button className="py-4 px-8  rounded-full text-black bg-primary text-lg font-semibold">
           GET STARTED
         </button>
         <div className="flex justify-center items-center gap-1 pt-4">
@@ -95,7 +95,7 @@ const MobileHerosection = () => {
           </p>
           <Link
             href={"/"}
-            className="text-base font-normal text-[#E4E24E] underline"
+            className="text-base font-normal text-primary underline"
           >
             Login
           </Link>

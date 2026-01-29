@@ -30,7 +30,7 @@ const OurAproach = () => {
     <div className="bg-black text-white py-24">
       <div className="wrapper">
         <div className="mx-auto text-center">
-          <p className="text-base font-medium text-[#c8C886] font-gtamerica">
+          <p className="text-base font-medium text-primary font-gtamerica">
             Our Approach
           </p>
           <p className="md:text-8xl text-5xl font-bold font-abcgravity md:w-200 w-80  text-center mx-auto">
