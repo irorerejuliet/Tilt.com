@@ -1,5 +1,6 @@
 import Herosection from "@/src/components/Herosection";
 import OurAproach from "@/src/components/OurAproach";
+import OurCustomers from "@/src/components/OurCustomers";
 import OurGoal from "@/src/components/OurGoal";
 import Image from "next/image";
 import Link from "next/link";
@@ -76,6 +77,7 @@ export default function Home() {
       </div>
       <OurAproach/>
       <OurGoal/>
+       <OurCustomers/>
     </>
   );
 }
